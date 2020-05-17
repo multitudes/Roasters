@@ -1,5 +1,4 @@
-
-<img src="https://travis-ci.org/multitudes/Roasters.svg?branch=master&amp;status=passed" alt="build:passed">
+[![Build Status](https://travis-ci.org/multitudes/Roasters.png?branch=master)](https://travis-ci.org/multitudes/Roasters})
 
 # Roasters
 
