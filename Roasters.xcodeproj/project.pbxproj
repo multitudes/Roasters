@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		45C420ED24713A940038FD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C420EC24713A940038FD1F /* AppDelegate.swift */; };
 		45C420EF24713A940038FD1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C420EE24713A940038FD1F /* SceneDelegate.swift */; };
-		45C420F124713A940038FD1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C420F024713A940038FD1F /* ViewController.swift */; };
-		45C420F424713A940038FD1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C420F224713A940038FD1F /* Main.storyboard */; };
 		45C420F724713A940038FD1F /* Roasters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45C420F524713A940038FD1F /* Roasters.xcdatamodeld */; };
 		45C420F924713A970038FD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C420F824713A970038FD1F /* Assets.xcassets */; };
 		45C420FC24713A970038FD1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C420FA24713A970038FD1F /* LaunchScreen.storyboard */; };
 		45C4210724713A970038FD1F /* RoastersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4210624713A970038FD1F /* RoastersTests.swift */; };
 		45C4211224713A970038FD1F /* RoastersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4211124713A970038FD1F /* RoastersUITests.swift */; };
+		45C4212224713AEE0038FD1F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C4212124713AEE0038FD1F /* CloudKit.framework */; };
+		45C42126247144920038FD1F /* ROTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C42125247144920038FD1F /* ROTabbarController.swift */; };
+		45C42129247145850038FD1F /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C42128247145850038FD1F /* SearchVC.swift */; };
+		45D4F46C24714C78009DD62A /* FavoriteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D4F46B24714C78009DD62A /* FavoriteListVC.swift */; };
+		45D4F46E24715A24009DD62A /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D4F46D24715A24009DD62A /* MapVC.swift */; };
+		45D4F47124715B3B009DD62A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D4F47024715B3B009DD62A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,6 @@
 		45C420E924713A940038FD1F /* Roasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C420EC24713A940038FD1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C420EE24713A940038FD1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45C420F024713A940038FD1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		45C420F324713A940038FD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45C420F624713A940038FD1F /* Roasters.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Roasters.xcdatamodel; sourceTree = "<group>"; };
 		45C420F824713A970038FD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45C420FB24713A970038FD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,13 @@
 		45C4210D24713A970038FD1F /* RoastersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoastersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C4211124713A970038FD1F /* RoastersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoastersUITests.swift; sourceTree = "<group>"; };
 		45C4211324713A970038FD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45C4211F24713AE60038FD1F /* Roasters.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Roasters.entitlements; sourceTree = "<group>"; };
+		45C4212124713AEE0038FD1F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		45C42125247144920038FD1F /* ROTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROTabbarController.swift; sourceTree = "<group>"; };
+		45C42128247145850038FD1F /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		45D4F46B24714C78009DD62A /* FavoriteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListVC.swift; sourceTree = "<group>"; };
+		45D4F46D24715A24009DD62A /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		45D4F47024715B3B009DD62A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C4212224713AEE0038FD1F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +95,7 @@
 				45C4210524713A970038FD1F /* RoastersTests */,
 				45C4211024713A970038FD1F /* RoastersUITests */,
 				45C420EA24713A940038FD1F /* Products */,
+				45C4212024713AEE0038FD1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +112,11 @@
 		45C420EB24713A940038FD1F /* Roasters */ = {
 			isa = PBXGroup;
 			children = (
-				45C420EC24713A940038FD1F /* AppDelegate.swift */,
-				45C420EE24713A940038FD1F /* SceneDelegate.swift */,
-				45C420F024713A940038FD1F /* ViewController.swift */,
-				45C420F224713A940038FD1F /* Main.storyboard */,
-				45C420F824713A970038FD1F /* Assets.xcassets */,
-				45C420FA24713A970038FD1F /* LaunchScreen.storyboard */,
+				45D4F46F24715B2F009DD62A /* Utilities */,
+				45C4212A247146660038FD1F /* Support */,
+				45C421272471456C0038FD1F /* Screens */,
+				45C421232471443D0038FD1F /* Custom Views and Controllers */,
+				45C4211F24713AE60038FD1F /* Roasters.entitlements */,
 				45C420FD24713A970038FD1F /* Info.plist */,
 				45C420F524713A940038FD1F /* Roasters.xcdatamodeld */,
 			);
@@ -129,6 +139,59 @@
 				45C4211324713A970038FD1F /* Info.plist */,
 			);
 			path = RoastersUITests;
+			sourceTree = "<group>";
+		};
+		45C4212024713AEE0038FD1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45C4212124713AEE0038FD1F /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45C421232471443D0038FD1F /* Custom Views and Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				45C42124247144550038FD1F /* TabbarControllers */,
+			);
+			path = "Custom Views and Controllers";
+			sourceTree = "<group>";
+		};
+		45C42124247144550038FD1F /* TabbarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45C42125247144920038FD1F /* ROTabbarController.swift */,
+			);
+			path = TabbarControllers;
+			sourceTree = "<group>";
+		};
+		45C421272471456C0038FD1F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				45C42128247145850038FD1F /* SearchVC.swift */,
+				45D4F46B24714C78009DD62A /* FavoriteListVC.swift */,
+				45D4F46D24715A24009DD62A /* MapVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		45C4212A247146660038FD1F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				45C420EC24713A940038FD1F /* AppDelegate.swift */,
+				45C420EE24713A940038FD1F /* SceneDelegate.swift */,
+				45C420FA24713A970038FD1F /* LaunchScreen.storyboard */,
+				45C420F824713A970038FD1F /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		45D4F46F24715B2F009DD62A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				45D4F47024715B3B009DD62A /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +300,6 @@
 			files = (
 				45C420FC24713A970038FD1F /* LaunchScreen.storyboard in Resources */,
 				45C420F924713A970038FD1F /* Assets.xcassets in Resources */,
-				45C420F424713A940038FD1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +324,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C42129247145850038FD1F /* SearchVC.swift in Sources */,
 				45C420F724713A940038FD1F /* Roasters.xcdatamodeld in Sources */,
-				45C420F124713A940038FD1F /* ViewController.swift in Sources */,
 				45C420ED24713A940038FD1F /* AppDelegate.swift in Sources */,
+				45C42126247144920038FD1F /* ROTabbarController.swift in Sources */,
+				45D4F46E24715A24009DD62A /* MapVC.swift in Sources */,
+				45D4F47124715B3B009DD62A /* Constants.swift in Sources */,
+				45D4F46C24714C78009DD62A /* FavoriteListVC.swift in Sources */,
 				45C420EF24713A940038FD1F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +367,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		45C420F224713A940038FD1F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45C420F324713A940038FD1F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		45C420FA24713A970038FD1F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Roasters/Roasters.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGXD5E6AF8;
 				INFOPLIST_FILE = Roasters/Info.plist;
@@ -456,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Roasters/Roasters.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGXD5E6AF8;
 				INFOPLIST_FILE = Roasters/Info.plist;
