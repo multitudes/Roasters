@@ -9,7 +9,10 @@
 import UIKit
 import MapKit
 
-class MapVC: UIViewController {
+
+class MapVC: UIViewController, MKMapViewDelegate ,CLLocationManagerDelegate {
+    
+    var locationManager: CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,30 @@ class MapVC: UIViewController {
         mapView.frame = view.coordinateSpace.bounds
         mapView.center = view.center
         
+        determineMyCurrentLocation()
+        
         view.addSubview(mapView)
+        
+
+    }
+    
+    
+    func determineMyCurrentLocation() {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        //view.backgroundColor = .gray
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+        }
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let userLocation: CLLocation
+        userLocation = locations[0] as CLLocation
+        print("user latitude = \(userLocation.coordinate.latitude)")
+        print("user longitude = \(userLocation.coordinate.longitude)")
     }
 }
