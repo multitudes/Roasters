@@ -23,7 +23,7 @@ class ROTabbarController: UITabBarController {
     func createSearchNC() -> UINavigationController {
         let searchVC = SearchVC()
         searchVC.title = "Search"
-        searchVC.tabBarItem = UITabBarItem(title: "Home", image: SFSymbols.home, selectedImage: SFSymbols.home)
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         searchVC.tabBarItem.tag = 0
         return UINavigationController(rootViewController: searchVC)
     }
