@@ -20,6 +20,8 @@
 		45D4F46C24714C78009DD62A /* FavoriteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D4F46B24714C78009DD62A /* FavoriteListVC.swift */; };
 		45D4F46E24715A24009DD62A /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D4F46D24715A24009DD62A /* MapVC.swift */; };
 		45D4F47124715B3B009DD62A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D4F47024715B3B009DD62A /* Constants.swift */; };
+		45D4F47424717F87009DD62A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D4F47324717F87009DD62A /* Model.swift */; };
+		45D4F47624717FB1009DD62A /* Roaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D4F47524717FB1009DD62A /* Roaster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +55,14 @@
 		45C4210D24713A970038FD1F /* RoastersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoastersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C4211124713A970038FD1F /* RoastersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoastersUITests.swift; sourceTree = "<group>"; };
 		45C4211324713A970038FD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45C4211F24713AE60038FD1F /* Roasters.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Roasters.entitlements; sourceTree = "<group>"; };
 		45C4212124713AEE0038FD1F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		45C42125247144920038FD1F /* ROTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROTabbarController.swift; sourceTree = "<group>"; };
 		45C42128247145850038FD1F /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		45D4F46B24714C78009DD62A /* FavoriteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListVC.swift; sourceTree = "<group>"; };
 		45D4F46D24715A24009DD62A /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		45D4F47024715B3B009DD62A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		45D4F47324717F87009DD62A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		45D4F47524717FB1009DD62A /* Roaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roaster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,11 @@
 		45C420EB24713A940038FD1F /* Roasters */ = {
 			isa = PBXGroup;
 			children = (
+				45D4F47224717F79009DD62A /* Model */,
 				45D4F46F24715B2F009DD62A /* Utilities */,
 				45C4212A247146660038FD1F /* Support */,
 				45C421272471456C0038FD1F /* Screens */,
 				45C421232471443D0038FD1F /* Custom Views and Controllers */,
-				45C4211F24713AE60038FD1F /* Roasters.entitlements */,
 				45C420FD24713A970038FD1F /* Info.plist */,
 				45C420F524713A940038FD1F /* Roasters.xcdatamodeld */,
 			);
@@ -192,6 +195,15 @@
 				45D4F47024715B3B009DD62A /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		45D4F47224717F79009DD62A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45D4F47324717F87009DD62A /* Model.swift */,
+				45D4F47524717FB1009DD62A /* Roaster.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +336,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D4F47624717FB1009DD62A /* Roaster.swift in Sources */,
+				45D4F47424717F87009DD62A /* Model.swift in Sources */,
 				45C42129247145850038FD1F /* SearchVC.swift in Sources */,
 				45C420F724713A940038FD1F /* Roasters.xcdatamodeld in Sources */,
 				45C420ED24713A940038FD1F /* AppDelegate.swift in Sources */,

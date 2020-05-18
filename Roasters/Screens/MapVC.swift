@@ -26,9 +26,8 @@ class MapVC: UIViewController, MKMapViewDelegate ,CLLocationManagerDelegate {
         mapView.frame = view.coordinateSpace.bounds
         mapView.center = view.center
         
-        determineMyCurrentLocation()
-        
         view.addSubview(mapView)
+        determineMyCurrentLocation()
         
 
     }
@@ -38,18 +37,19 @@ class MapVC: UIViewController, MKMapViewDelegate ,CLLocationManagerDelegate {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
-        //view.backgroundColor = .gray
         
         if CLLocationManager.locationServicesEnabled() {
             locationManager.startUpdatingLocation()
         }
+        
     }
     
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let userLocation: CLLocation
-        userLocation = locations[0] as CLLocation
-        print("user latitude = \(userLocation.coordinate.latitude)")
-        print("user longitude = \(userLocation.coordinate.longitude)")
+//        let userLocation: CLLocation
+//        userLocation = locations[0] as CLLocation
+//        print("user latitude = \(userLocation.coordinate.latitude)")
+//        print("user longitude = \(userLocation.coordinate.longitude)")
     }
 }
+

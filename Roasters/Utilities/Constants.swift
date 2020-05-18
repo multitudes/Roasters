@@ -12,5 +12,5 @@ enum SFSymbols {
     
     static let map = UIImage(systemName: "mappin.and.ellipse")
     static let favorites = UIImage(systemName: "heart.fill")
-    static let sparkles = UIImage(systemName: "sparkles")
+    static let home = UIImage(systemName: "house.fill")
 }

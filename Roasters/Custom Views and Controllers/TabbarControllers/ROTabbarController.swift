@@ -12,17 +12,18 @@ class ROTabbarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UITabBar.appearance().tintColor = .systemYellow
+        UITabBar.appearance().tintColor = .systemRed
         viewControllers = [createSearchNC(), createFavoritesNC(), createMapNC()]
         
         
     }
     
+#warning("Warning check for localisation launchscreen adding text to tabbar icons?")
     
     func createSearchNC() -> UINavigationController {
         let searchVC = SearchVC()
         searchVC.title = "Search"
-        searchVC.tabBarItem = UITabBarItem(title: "", image: SFSymbols.sparkles, selectedImage: SFSymbols.sparkles)
+        searchVC.tabBarItem = UITabBarItem(title: "Home", image: SFSymbols.home, selectedImage: SFSymbols.home)
         searchVC.tabBarItem.tag = 0
         return UINavigationController(rootViewController: searchVC)
     }
@@ -31,7 +32,7 @@ class ROTabbarController: UITabBarController {
     func createFavoritesNC() -> UINavigationController {
         let favoritesVC = FavoriteListVC()
         favoritesVC.title = "Favorites"
-        favoritesVC.tabBarItem = UITabBarItem(title: "", image: SFSymbols.favorites, selectedImage: SFSymbols.favorites)
+        favoritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
         favoritesVC.tabBarItem.tag = 1
         return UINavigationController(rootViewController: favoritesVC)
     }
@@ -40,7 +41,7 @@ class ROTabbarController: UITabBarController {
     func createMapNC() -> UINavigationController {
         let mapVC = MapVC()
         mapVC.title = "Map"
-        mapVC.tabBarItem = UITabBarItem(title: "", image: SFSymbols.map, selectedImage: SFSymbols.map)
+        mapVC.tabBarItem = UITabBarItem(title: "Map", image: SFSymbols.map, selectedImage: SFSymbols.map)
         mapVC.tabBarItem.tag = 2
         return UINavigationController(rootViewController: mapVC)
     }
