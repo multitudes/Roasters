@@ -7,3 +7,4 @@ This proof of concept app will pull data from icloud and put some locations on a
 This will allow me to:
 - Practicing fetching data with cloudkit
 - Practice adding tests and Continuous Integration with Travis
+- Using MapKit.
